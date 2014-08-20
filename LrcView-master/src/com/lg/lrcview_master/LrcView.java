@@ -126,7 +126,7 @@ public class LrcView extends View implements ILrcView{
 		mTouchSlop = ViewConfiguration.get(getContext()).getScaledTouchSlop();
 	}
 
-	private int mTotleDrawRow = 15;
+	private int mTotleDrawRow;
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
@@ -137,6 +137,10 @@ public class LrcView extends View implements ILrcView{
 			float textX = (getWidth()-textWidth)/2;
 			canvas.drawText(DEFAULT_TEXT, textX, getHeight()/2, mPaintForOtherLrc);
 			return;
+		}
+		if(mTotleDrawRow == 0){
+			//初始化将要绘制的歌词行数
+			mTotleDrawRow = (int) (getHeight()/(mCurSizeForOtherLrc+mCurPadding))+4;
 		}
 		//因为不需要将所有歌词画出来
 		int minRaw = mCurRow - (mTotleDrawRow-1)/2;
