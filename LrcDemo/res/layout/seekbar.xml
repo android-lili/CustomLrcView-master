@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <SeekBar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:maxHeight="1.5dp"
+        android:minHeight="1.5dp"
+        android:progressDrawable="@drawable/layer_list_progrssbar_play_bottom"
+        android:thumb="@drawable/selector_progress_bar_playing"
+        android:thumbOffset="17dp" />
+
