@@ -25,7 +25,7 @@ import com.lg.lrcview_master.LrcRow;
 import com.lg.lrcview_master.LrcView;
 import com.lg.lrcview_master.LrcView.OnLrcClickListener;
 import com.lg.lrcview_master.LrcView.OnSeekToListener;
-
+/**2014.8.21***/
 public class MainActivity extends Activity {
 	private MediaPlayer mPlayer;
 	/**    控制播放的SeekBar***/
