@@ -28,7 +28,8 @@ import com.lg.lrcview_master.LrcView.OnSeekToListener;
 
 public class MainActivity extends Activity {
 	private MediaPlayer mPlayer;
-	/**控制播放的SeekBar***/
+	/**    控制播放的SeekBar***/
+	
 	private SeekBar mPlayerSeekBar;
 	/**控制歌词字体大小的SeekBar***/
 	private SeekBar mLrcSeekBar;
